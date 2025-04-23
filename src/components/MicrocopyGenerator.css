@@ -1,0 +1,64 @@
+.generator {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  font-family: sans-serif;
+}
+
+.generator-title {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.generator-title img {
+  width: 80%;
+  height: fit-content;
+}
+.generator-controls {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.generator-controls select {
+  flex: 1;
+  padding: 8px 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.generator-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.generator-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f7f7f7;
+  padding: 12px 16px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.copy-button {
+  font-size: 0.8rem;
+  padding: 6px 10px;
+  border: none;
+  background: #007bff;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.copy-button:hover {
+  background: #0056b3;
+}
