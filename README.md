@@ -6,16 +6,15 @@ A smart, snappy microcopy generator built with React and Vite. Select categories
 
 - 🗂️ Tons of categories (buttons, tooltips, forms, 404s, and more)
 - 🎭 Multiple tones (friendly, professional, funny, snarky, wholesome, etc.)
-- 🔀 Random microcopy generator
-- 💾 Save favorites to local storage
-- 🌙 Dark mode toggle
+- 🔀 Random microcopy generator (planned)
+- 💾 Save favorites to local storage (planned)
+- 🌙 Dark mode toggle (planned)
 - 📋 Copy to clipboard
 - 📤 Export favorites (planned)
 
 ## 📦 Tech Stack
 
 - React
-- Vite
 - Vanilla CSS
 - Local Storage
 

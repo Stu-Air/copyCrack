@@ -1,0 +1,134 @@
+{
+  "buttons": {
+    "Smart": [
+      "\u2014 Click to proceed with precision.",
+      "\u2014 Launch the next step like a pro.",
+      "\u2014 This button does exactly what you need.",
+      "\u2014 Next step initiated with intelligence.",
+      "\u2014 Confirm like a seasoned expert."
+    ],
+    "Friendly": [
+      "\u2014 Go ahead, give it a tap!",
+      "\u2014 Let's do this together!",
+      "\u2014 All set? Press me!",
+      "\u2014 We're ready when you are.",
+      "\u2014 Your move, superstar!"
+    ],
+
+    "Cool": [
+      "\u2014 Boom. You're in.",
+      "\u2014 Hit it.",
+      "\u2014 Slide into action.",
+      "\u2014 This is where it gets good.",
+      "\u2014 Press and impress."
+    ],
+
+    "Snarky": [
+      "\u2014 Oh now you want to click?",
+      "\u2014 About time you showed up.",
+      "\u2014 Well, look who finally decided to press something.",
+      "\u2014 Bold move. Let's see if it pays off.",
+      "\u2014 Sure, like that\u2019ll help."
+    ],
+
+    "Corporate": [
+      "\u2014 Submit request.",
+      "\u2014 Proceed with operation.",
+      "\u2014 Confirm action.",
+      "\u2014 Click to continue workflow.",
+      "\u2014 Execute process."
+    ]
+  },
+  "tooltips": {
+    "Smart": [
+      "\u2014 Hover for more insights.",
+      "\u2014 Detailed info just a hover away.",
+      "\u2014 Clarity, one tooltip at a time.",
+      "\u2014 The data beneath the surface.",
+      "\u2014 Understand the context instantly."
+    ],
+
+    "Friendly": [
+      "\u2014 Need a tip? I'm here!",
+      "\u2014 Just hover, buddy!",
+      "\u2014 More deets over here.",
+      "\u2014 Let me help you out.",
+      "\u2014 Info right this way \u2192"
+    ],
+    "Cool": [
+      "\u2014 Secret stash of info.",
+      "\u2014 Pro tips inside.",
+      "\u2014 Hover like a boss.",
+      "\u2014 Unlock the hidden gems.",
+      "\u2014 Knowledge drop incoming."
+    ],
+    "Snarky": [
+      "\u2014 Too lazy to figure it out, huh?",
+      "\u2014 Here comes the obvious...",
+      "\u2014 Need a manual too?",
+      "\u2014 Just read it, genius.",
+      "\u2014 Oh come on, it's not rocket science."
+    ],
+    "Corporate": [
+      "\u2014 Displays additional information.",
+      "\u2014 Mouse over for details.",
+      "\u2014 Tooltip activated.",
+      "\u2014 For your reference.",
+      "\u2014 Informational note."
+    ]
+  },
+  "form_errors": {
+    "Smart": [
+      "\u2014 Oops, that's not quite right.",
+      "\u2014 Please review your input.",
+      "\u2014 Looks like a formatting issue."
+    ],
+    "Friendly": [
+      "\u2014 Uh-oh, try again!",
+      "\u2014 Looks like we missed a spot.",
+      "\u2014 Almost! Fix a few things first."
+    ],
+    "Cool": [
+      "\u2014 Nope, that won\u2019t fly.",
+      "\u2014 Check yourself before you wreck yourself.",
+      "\u2014 Glitch in the form matrix."
+    ],
+    "Snarky": [
+      "\u2014 You had one job.",
+      "\u2014 Seriously?",
+      "\u2014 Try reading next time."
+    ],
+    "Corporate": [
+      "\u2014 Input error detected.",
+      "\u2014 Form validation failed.",
+      "\u2014 Please correct the highlighted fields."
+    ]
+  },
+  "notifications": {
+    "Smart": [
+      "\u2014 Update complete.",
+      "\u2014 Your preferences have been saved.",
+      "\u2014 Settings applied successfully."
+    ],
+    "Friendly": [
+      "\u2014 All set!",
+      "\u2014 Nice work \u2014 that\u2019s done!",
+      "\u2014 Saved and sound."
+    ],
+    "Cool": [
+      "\u2014 Boom. Updated.",
+      "\u2014 Mission accomplished.",
+      "\u2014 You nailed it."
+    ],
+    "Snarky": [
+      "\u2014 Congrats on doing the bare minimum.",
+      "\u2014 Finally.",
+      "\u2014 Even a toaster could\u2019ve done that."
+    ],
+    "Corporate": [
+      "\u2014 Operation completed.",
+      "\u2014 Your changes have been recorded.",
+      "\u2014 System update successful."
+    ]
+  }
+}
