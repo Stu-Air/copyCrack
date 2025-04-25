@@ -1,14 +1,15 @@
 {
   "files": {
-    "main.css": "/copyCrack/static/css/main.85513a59.css",
-    "main.js": "/copyCrack/static/js/main.5e0e2270.js",
-    "static/js/99.6f2bb7f0.chunk.js": "/copyCrack/static/js/99.6f2bb7f0.chunk.js",
+    "main.css": "/copyCrack/static/css/main.9fdc4410.css",
+    "main.js": "/copyCrack/static/js/main.bb7fd0cb.js",
+    "static/js/99.29aec0c9.chunk.js": "/copyCrack/static/js/99.29aec0c9.chunk.js",
+    "static/media/logoLong.png": "/copyCrack/static/media/logoLong.05888c756097f69e4f86.png",
     "index.html": "/copyCrack/index.html",
-    "main.85513a59.css.map": "/copyCrack/static/css/main.85513a59.css.map",
-    "main.5e0e2270.js.map": "/copyCrack/static/js/main.5e0e2270.js.map"
+    "main.9fdc4410.css.map": "/copyCrack/static/css/main.9fdc4410.css.map",
+    "main.bb7fd0cb.js.map": "/copyCrack/static/js/main.bb7fd0cb.js.map"
   },
   "entrypoints": [
-    "static/css/main.85513a59.css",
-    "static/js/main.5e0e2270.js"
+    "static/css/main.9fdc4410.css",
+    "static/js/main.bb7fd0cb.js"
   ]
 }
