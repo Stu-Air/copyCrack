@@ -39,7 +39,7 @@ A smart, snappy microcopy generator built with React and Vite. Select categories
 
 ### 🎨 Phase 4: Styling
 
-- [ ] Dark mode toggle
+- [x] Dark mode toggle
 - [ ] Smooth transitions
 - [ ] Responsive, accessible UI
 

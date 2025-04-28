@@ -1,7 +1,6 @@
 import React from "react";
 
 import MicrocopyGenerator from "./components/MicrocopyGenerator";
-import "./App.css";
 
 function App() {
   return (

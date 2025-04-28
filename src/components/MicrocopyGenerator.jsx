@@ -6,6 +6,7 @@ import { faStar as fasStar } from "@fortawesome/free-solid-svg-icons";
 import { faStar as farStar } from "@fortawesome/free-regular-svg-icons";
 
 export default function MicrocopyGenerator() {
+  const [isChecked, setIsChecked] = useState(false);
   const [category, setCategory] = useState("button");
   const [tone, setTone] = useState("friendly");
   const [microcopyData, setMicrocopyData] = useState(null);
@@ -28,10 +29,42 @@ export default function MicrocopyGenerator() {
   //   <FontAwesomeIcon icon={fasStar} />
   //   <FontAwesomeIcon icon={farStar} />
 
+  /*
+
+
+*/
+
+  function copied() {
+    var x = document.getElementById("snackbar");
+    x.className = "show";
+    setTimeout(function () {
+      x.className = x.className.replace("show", "");
+    }, 3000);
+  }
+
+  const handleOnChange = () => {
+    setIsChecked(!isChecked);
+  };
+
+  if (isChecked) {
+    document.querySelector("body").style.cssText = "background:#fff";
+    document.querySelector(":root").style.cssText = "--text:#000";
+    document.querySelector("#snackbar").style.color = "#fff";
+  } else {
+    document.querySelector("body").style.cssText = "background:#21262e";
+    document.querySelector(":root").style.cssText = "--text:#fff";
+    document.querySelector("#snackbar").style.color = "#000";
+  }
+
   return (
     <div className="generator">
       <div>
-        <label class="switch" for="switch">
+        <label
+          class="switch"
+          for="switch"
+          checked={isChecked}
+          onChange={handleOnChange}
+        >
           <input id="switch" type="checkbox" class="circle" />
           <svg
             viewBox="0 0 384 512"
@@ -72,13 +105,14 @@ export default function MicrocopyGenerator() {
       <ul className="generator-list">
         {options.map((line, i) => (
           <li key={i} className="generator-item">
-            <div className="copied">Copied to Clipboard !!</div>
+            <div id="snackbar">Woohoo you got it!!</div>
             <span className="text">{line}</span>
             <div className="btns">
               <button
                 className="copy-button"
                 onClick={() => {
                   navigator.clipboard.writeText(line);
+                  copied();
                 }}
               >
                 Gimme

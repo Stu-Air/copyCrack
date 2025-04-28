@@ -1,10 +1,24 @@
+:root {
+  --shadows: 0 2px 12px #ddd;
+  --transition: 300ms;
+  --transition500: 500ms;
+  --color-dark: #21262e;
+  --color-gray: #52555a;
+  --lists: #dddddd1d;
+  --text: #000;
+}
+body {
+  color: var(--text);
+  background: #fff;
+}
+
 .generator {
   max-width: 600px;
-  margin: 40px auto;
+  margin: auto;
   padding: 20px;
-  background: #fff;
+  background: transparent;
   border-radius: 8px;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--shadows);
   font-family: sans-serif;
 }
 
@@ -17,6 +31,9 @@
 .generator-title img {
   width: 80%;
   height: fit-content;
+  backdrop-filter: blur(5px);
+  background: #dddddd1d;
+  border-radius: 20px;
 }
 .generator-controls {
   display: flex;
@@ -29,8 +46,10 @@
   flex: 1;
   padding: 8px 12px;
   font-size: 1rem;
-  border: 1px solid #ccc;
+  border: 1px solid var(--lists);
   border-radius: 4px;
+  background: var(--lists);
+  color: var(--text);
 }
 
 .generator-list {
@@ -43,7 +62,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #f7f7f7;
+  background: var(--lists);
   padding: 12px 16px;
   margin-bottom: 10px;
   border-radius: 4px;
@@ -82,55 +101,69 @@
   transform: scale(0.9);
 }
 
-.copied {
-  width: 400px;
-  position: absolute;
-  color: #000;
-  font-weight: 700;
-  font-size: large;
+#snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: var(--text);
+  color: #fff;
   text-align: center;
-  background: rgba(82, 85, 90, 0.75);
-  padding: 14px 16px;
-  margin: 10px 20px;
-  border-radius: 4px;
-  animation: fade 2s linear;
-  display: none;
+  border-radius: 12px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+  font-size: 17px;
 }
 
-@keyframes fade {
-  100% {
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@keyframes fadein {
+  from {
+    bottom: 0;
     opacity: 0;
   }
-  50% {
+  to {
+    bottom: 30px;
     opacity: 1;
   }
 }
 
+@keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
 /* ################# toggle switch container ################# */
-/* The switch container */
+
 .switch {
-  --transition: 300ms;
-  --transition500: 500ms;
-  --color-dark: #0c0f14;
-  --color-darkGray: #21262e;
-  --color-gray: #52555a;
-  --color-offwhite: #cecece;
-  --shadow-color: var(--color-dark);
   position: relative;
   display: flex;
   align-items: center;
   width: 60px;
   height: fit-content;
-  background-color: var(--color-dark);
+  background-color: transparent;
   border-radius: 30px;
+  box-shadow: var(--shadows);
   padding: 4px;
   transition: var(--transition500);
   user-select: none;
   cursor: pointer;
   overflow: hidden;
+  margin: auto 80%;
 }
 
-/* Svg styles */
 .switch .svg {
   transition: var(--transition);
   position: absolute;
@@ -148,11 +181,10 @@
   height: 12px;
   border-radius: 50%;
   left: calc(100% - 21.5px);
-  top: 15px;
+  top: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  scale: 0.8;
   opacity: 0;
 }
 
@@ -163,17 +195,16 @@
   height: 3px;
   border-radius: 50%;
   background: var(--color-dark);
-  background: white;
+  background: transparent;
   z-index: 1;
-  box-shadow: 11px 0px 0px var(--shadow-color),
-    10.3px 0px 0px var(--shadow-color), -11px 0px 0px var(--shadow-color),
-    -10.3px 0px 0px var(--shadow-color), 0px -11px 0px var(--shadow-color),
-    0px -10.3px 0px var(--shadow-color), 0px 11px 0px var(--shadow-color),
-    0px 10.3px 0px var(--shadow-color), 8px 8px 0px var(--shadow-color),
-    7.3px 7.3px 0px var(--shadow-color), 8px -8px 0px var(--shadow-color),
-    7.3px -7.3px 0px var(--shadow-color), -8px -8px 0px var(--shadow-color),
-    -7.3px -7.3px 0px var(--shadow-color), -8px 8px 0px var(--shadow-color),
-    -7.3px 7.3px 0px var(--shadow-color);
+  box-shadow: 11px 0px 0px var(--color-dark), 10.3px 0px 0px var(--color-dark),
+    -11px 0px 0px var(--color-dark), -10.3px 0px 0px var(--color-dark),
+    0px -11px 0px var(--color-dark), 0px -10.3px 0px var(--color-dark),
+    0px 11px 0px var(--color-dark), 0px 10.3px 0px var(--color-dark),
+    8px 8px 0px var(--color-dark), 7.3px 7.3px 0px var(--color-dark),
+    8px -8px 0px var(--color-dark), 7.3px -7.3px 0px var(--color-dark),
+    -8px -8px 0px var(--color-dark), -7.3px -7.3px 0px var(--color-dark),
+    -8px 8px 0px var(--color-dark), -7.3px 7.3px 0px var(--color-dark);
 }
 
 .switch .sun .dot::before {
@@ -185,11 +216,10 @@
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: white;
+  background: transparent;
   border: 2px solid var(--color-dark);
 }
 
-/*checkbox styles */
 .switch .circle {
   appearance: none;
   position: relative;
@@ -197,14 +227,14 @@
   height: 25px;
   border-radius: 50%;
   left: 0;
-  background-color: var(--color-darkGray);
-  border: 1px solid var(--color-darkGray);
+  background-color: transparent;
+  border: 1px solid transparent;
   transition: var(--transition500);
-  box-shadow: 1px 1px 20px 3px var(--color-darkGray);
+  box-shadow: 1px 1px 20px 3px transparent;
 }
 
 .switch:has(.circle:checked) {
-  background: var(--color-offwhite);
+  background: transparent;
 }
 
 .switch .circle:hover {
@@ -216,9 +246,9 @@
 
 .switch .circle:checked {
   left: calc(100% - 24px);
-  background: white;
-  border-color: white;
-  box-shadow: 1px 1px 30px 12px white;
+  background: transparent;
+  border-color: transparent;
+  box-shadow: 1px 1px 1px 50px transparent;
 }
 
 .switch:has(.circle:checked) > .sun {
