@@ -29,11 +29,6 @@ export default function MicrocopyGenerator() {
   //   <FontAwesomeIcon icon={fasStar} />
   //   <FontAwesomeIcon icon={farStar} />
 
-  /*
-
-
-*/
-
   function copied() {
     var x = document.getElementById("snackbar");
     x.className = "show";
@@ -49,11 +44,9 @@ export default function MicrocopyGenerator() {
   if (isChecked) {
     document.querySelector("body").style.cssText = "background:#fff";
     document.querySelector(":root").style.cssText = "--text:#000";
-    document.querySelector("#snackbar").style.color = "#fff";
   } else {
     document.querySelector("body").style.cssText = "background:#21262e";
     document.querySelector(":root").style.cssText = "--text:#fff";
-    document.querySelector("#snackbar").style.color = "#000";
   }
 
   return (
